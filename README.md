@@ -44,13 +44,14 @@ Training steps included:
 
 ---
 
+```
 ## 🔍 Sample Results
 
 | Image | Prediction | Confidence | Saliency Map |
 |-------|------------|------------|---------------|
 | ![](https://github.com/user-attachments/assets/5788fba9-d701-476f-a898-42c5cda8626c) | REAL | 94.5% | ✅ |
 | ![](https://github.com/user-attachments/assets/5118f69d-5f1e-48c6-9798-70ea2b2b49c8)| FAKE | 91.2% | ✅ |
-
+```
 ---
 
 ## 🚀 Run Locally
