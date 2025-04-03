@@ -1,6 +1,6 @@
 # image-detector
 
-# 🧠 Fake Image Detector
+# Fake Image Detector
 
 > A deep learning-powered web app that detects whether an image of a human face is AI-generated (fake) or real.
 
