@@ -1,0 +1,27 @@
+# Ignore virtual environment
+venv/
+
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore model weights
+models/*.pth
+*.h5
+*.pt
+
+# Ignore data
+data/
+
+# Ignore Flask temporary files
+instance/
+*.db
+.env
+
+# Ignore VSCode or other editor files
+.vscode/
+*.log
+.DS_Store

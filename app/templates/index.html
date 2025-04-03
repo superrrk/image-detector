@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fake Image Detector</title>
+    <link href="{{ url_for('static', filename='styles/main.css') }}" rel="stylesheet">
+</head>
+<body>
+    <h1>Fake Image Detector</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" required>
+        <br><br>
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if filename %}
+        <h2>🧾 Prediction: {{ label }}</h2>
+        <p>Confidence: {{ confidence }}%</p>
+        <h3>Original Image:</h3>
+        <img src="{{ url_for('static', filename='uploads/' + filename) }}" alt="Uploaded Image">
+        <h3>Saliency Map:</h3>
+        <img src="{{ url_for('static', filename='saliency_map.png') }}" alt="Saliency Map">
+    {% endif %}
+</body>
+</html>
