@@ -48,8 +48,8 @@ Training steps included:
 
 | Image | Prediction | Confidence | Saliency Map |
 |-------|------------|------------|---------------|
-| ![real_ed.jpg](client/public/samples/real_ed.png) | REAL | 94.5% | ✅ |
-| ![fake_ed.jpg](client/public/samples/fake_ed.png) | FAKE | 91.2% | ✅ |
+| ![](https://github.com/user-attachments/assets/5788fba9-d701-476f-a898-42c5cda8626c =x100) | REAL | 94.5% | ✅ |
+| ![](https://github.com/user-attachments/assets/5118f69d-5f1e-48c6-9798-70ea2b2b49c8 =x100)| FAKE | 91.2% | ✅ |
 
 ---
 
