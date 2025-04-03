@@ -10,7 +10,7 @@ This project combines a custom PyTorch convolutional neural network (CNN) with a
 
 ## 💻 Tech Stack
 
-- **Frontend:** React, SCSS, Dropzone, Dark mode toggle
+- **Frontend:** React, SCSS
 - **Backend:** Flask, PyTorch, Captum (for saliency maps)
 - **Model:** Custom CNN trained to classify real vs AI-generated faces (87% accuracy)
 - **Other:** Numpy, Matplotlib, Pillow
