@@ -6,16 +6,12 @@
 
 This project combines a custom PyTorch convolutional neural network (CNN) with a full-stack Flask + React frontend. Users can upload or select images, receive real-time predictions with confidence scores, and visualize saliency maps that explain the model's decision.
 
----
-
 ## 💻 Tech Stack
 
 - **Frontend:** React, SCSS
 - **Backend:** Flask, PyTorch, Captum (for saliency maps)
 - **Model:** Custom CNN trained to classify real vs AI-generated faces (87% accuracy)
 - **Other:** Numpy, Matplotlib, Pillow
-
----
 
 ## 📸 Screenshots + Live Demo
 
@@ -79,7 +75,6 @@ Training steps included:
    npm install
    npm start
    ```
----
 
 ## 📚 Future Improvements
 
