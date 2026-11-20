@@ -1,32 +1,30 @@
-# Ignore virtual environment
+.venv/
 venv/
-
-# Ignore Python cache
 __pycache__/
+.pytest_cache/
 *.py[cod]
-
-# Ignore Jupyter notebook checkpoints
-.ipynb_checkpoints/
-
-# Ignore model weights
-models/*.pth
-*.h5
-*.pt
-
-# Ignore data
-data/
-
-# Ignore Flask temporary files
-instance/
-*.db
+.DS_Store
 .env
+models/
+*.pth
+*.pt
+uploads/
 
-# Ignore VSCode or other editor files
-.vscode/
-*.log
+# Local training data and artifacts
+dataset/
+data/
+real_vs_fake/
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+models/*.pth
+models/*.pt
+.env
 .DS_Store
 
-# Local ML assets
+# Local training assets
 dataset/
 data/
 real_vs_fake/
