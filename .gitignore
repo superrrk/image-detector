@@ -25,3 +25,16 @@ instance/
 .vscode/
 *.log
 .DS_Store
+
+# Local ML assets
+dataset/
+data/
+real_vs_fake/
+models/
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.env
+.DS_Store
