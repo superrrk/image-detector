@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: image-forensics-lab
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    plan: 1c-2g
+    healthCheckPath: /api/ready
+    autoDeployTrigger: commit
+    envVars:
+      - key: MODEL_URL
+        sync: false
+      - key: MODEL_SHA256
+        sync: false
+      - key: MODEL_PATH
+        value: /app/models/image_origin_resnet18_v2.pth
+      - key: OMP_NUM_THREADS
+        value: '1'
+      - key: OPENBLAS_NUM_THREADS
+        value: '1'
