@@ -23,6 +23,19 @@ def create_app(predictor=None):
         return jsonify(status="ok", model_available=bool(getattr(engine, "checkpoint", None) and engine.checkpoint.is_file()),
                        checkpoint_name=engine.checkpoint.name if getattr(engine, "checkpoint", None) and engine.checkpoint.is_file() else None)
 
+    @app.get("/api/ready")
+    def ready():
+        # A deployment is not ready unless inference can actually load the weights.
+        try:
+            engine._load()
+        except ModelUnavailable:
+            logger.exception("Model checkpoint unavailable during readiness check")
+            return jsonify(status="unavailable", model_available=False), 503
+        except Exception:
+            logger.exception("Model initialization failed during readiness check")
+            return jsonify(status="error", model_available=False), 503
+        return jsonify(status="ready", model_available=True)
+
     @app.errorhandler(413)
     def too_large(_error):
         return jsonify(error="Image exceeds the 8 MB upload limit."), 413

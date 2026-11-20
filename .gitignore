@@ -10,29 +10,12 @@ models/
 *.pt
 uploads/
 
-# Local training data and artifacts
-dataset/
-data/
-real_vs_fake/
-.venv/
-venv/
-__pycache__/
-.pytest_cache/
-*.pyc
-models/*.pth
-models/*.pt
-.env
-.DS_Store
-
-# Local training assets
-dataset/
-data/
-real_vs_fake/
+# Trained weights and local assets must not be committed with application code
 models/
+dataset/
+data/
+real_vs_fake/
 .venv/
-venv/
-__pycache__/
-.pytest_cache/
-*.pyc
 .env
-.DS_Store
+*.pth
+*.pt
